@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyclass {
+    font-family: Arial, sans-serif;
+    background-image: url("/Images/REDredhalway.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    color: #333; 
+}
+
+#navMenu {
+    background-color: #333; 
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#navMenu a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+
+#navMenu a:hover {
+    background-color: #6f1307;
+    border-radius: 5px; 
+}
+
+@media (max-width: 500px) {
+    #navMenu {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    #navMenu a {
+        margin: 10px 0;
+        display: block;
+        
+    }
+
+}
+
+#displayContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+main {
+    padding: 5px; 
+    background-color: rgb(247, 249, 236); 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    color: #502c2c;
+}
+
+/* Button styling */
+button {
+    background-color: #710d0d;
+    color: white;
+    border: none;
+    padding: 10px 15px; 
+    margin: 5px 0; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #402929; 
+}
+
+button:disabled {
+    background-color: #ffffff; 
+    cursor: not-allowed;
+}
